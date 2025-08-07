@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+#album {
+  background-color: #a3c6b4;
+  color: #232323;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+}
+#album:hover {
+  background-color: #749785;
+  color: #232323;
+}
+
+input.form-control {
+  background-color: #c9c9c9;
+}

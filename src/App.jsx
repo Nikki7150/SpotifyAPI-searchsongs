@@ -112,7 +112,7 @@ function App() {
               <Card
                 key={album.id}
                 style={{
-                  backgroundColor: "#d9d9d9ff",
+                  backgroundColor: "#434343ff",
                   margin: "10px",
                   borderRadius: "5px",
                   marginBottom: "30px",
@@ -142,22 +142,11 @@ function App() {
                   <Card.Text
                     style={{
                       color: "black",
-                      //fontFamily: "Trattatello", fantasy,
                     }}
                   >
                     Release Date: <br /> {album.release_date}
                   </Card.Text>
-                  <Button
-                    href={album.external_urls.spotify}
-                    style={{
-                      backgroundColor: "black",
-                      color: "white",
-                      fontWeight: "bold",
-                      fontSize: "15px",
-                      borderRadius: "5px",
-                      padding: "10px",
-                    }}
-                  >
+                  <Button id="album" href={album.external_urls.spotify}>
                     Album Link
                   </Button>
                 </Card.Body>
