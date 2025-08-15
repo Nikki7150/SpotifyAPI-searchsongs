@@ -146,8 +146,11 @@ function App() {
                   >
                     Release Date: <br /> {album.release_date}
                   </Card.Text>
-                  <Button id="album" href={album.external_urls.spotify}>
+                  <Button id="album" href={album.external_urls.spotify} target="_blank">
                     Album Link
+                  </Button>
+                  <Button id="tracks">
+                    Open Tracks
                   </Button>
                 </Card.Body>
               </Card>
