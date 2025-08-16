@@ -152,7 +152,7 @@ function App() {
                   <Button
                     id="tracks"
                     onClick={() =>
-                      window.location.href = `tracks.html?album=${album.id}&token=${accessToken}`
+                      window.location.href = `tracks.html?album=${album.id}`
                     }
                   >
                     Open Tracks
