@@ -149,7 +149,12 @@ function App() {
                   <Button id="album" href={album.external_urls.spotify} target="_blank">
                     Album Link
                   </Button>
-                  <Button id="tracks">
+                  <Button
+                    id="tracks"
+                    onClick={() =>
+                      window.location.href = `tracks.html?album=${album.id}&token=${accessToken}`
+                    }
+                  >
                     Open Tracks
                   </Button>
                 </Card.Body>
@@ -162,4 +167,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
